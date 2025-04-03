@@ -24,7 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = "django-insecure-0lgfz5@ork_-bj4hwegu+5ff!1)+=hlim$ri0(i&&ajn@3%egs"
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = [
     "dog-tools.ru",
@@ -32,6 +32,14 @@ ALLOWED_HOSTS = [
     "shark-tools.ru",
     "www.shark-tools.ru",
     "127.0.0.1",
+    "176.99.9.17",
+]
+
+CSRF_TRUSTED_ORIGINS = [
+    "https://127.0.0.1",
+    "https://www.176.99.9.17",
+    "http://127.0.0.1",
+    "http://www.176.99.9.17",
 ]
 
 
